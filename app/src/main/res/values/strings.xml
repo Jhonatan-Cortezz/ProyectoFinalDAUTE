@@ -5,4 +5,28 @@
     <string name="title_notifications">Usuarios</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="estadoProducto">
+        <item>Seleccione</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="estadoCategorias">
+        <item>Seleccione</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="estadoUsuario">
+        <item>Seleccione</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="tipoUsuario">
+        <item>Seleccione</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
 </resources>

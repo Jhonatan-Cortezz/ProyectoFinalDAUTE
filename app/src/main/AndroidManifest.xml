@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.home.Recyclerviewm"></activity>
+        <activity android:name=".ui.notifications.GuardarProductos"></activity>
+        <activity android:name=".ui.notifications.EditarProductos" />
+        <activity android:name=".ui.notifications.DetalleProducto" />
+        <activity android:name=".ui.dashboard.GuardarUsuario" />
+        <activity android:name=".ui.dashboard.EditarUsuario" />
+        <activity android:name=".ui.dashboard.DetalleUsuario" />
+        <activity android:name=".ui.home.Recyclerviewm" />
         <activity android:name=".ui.home.EditarCategoria" />
         <activity android:name=".ui.home.DetalleCategoria" />
         <activity
