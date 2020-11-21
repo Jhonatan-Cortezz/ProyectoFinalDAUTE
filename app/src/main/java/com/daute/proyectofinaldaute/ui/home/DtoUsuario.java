@@ -1,30 +1,31 @@
 package com.daute.proyectofinaldaute.ui.home;
 
 public class DtoUsuario {
-    private String nombreU;
-    private String clave;
+        private int idUsuario;
+        private String nombreUsuario;
+        private String apellidoUsuario;
+        private String correo;
+        private String usuario;
+        private String clave;
+        private int tipo;
+        private int estado;
+        private String pregunta;
+        private String respuesta;
 
-    public DtoUsuario() {
-    }
+        public DtoUsuario() {
+        }
 
-    public DtoUsuario(String nombre, String clave) {
-        this.nombreU = nombre;
-        this.clave = clave;
-    }
+        public DtoUsuario(int idUsuario, String nombreUsuario, String apellidoUsuario, String correo, String usuario, String clave, int tipo, int estado, String pregunta, String respuesta) {
+            this.idUsuario = idUsuario;
+            this.nombreUsuario = nombreUsuario;
+            this.apellidoUsuario = apellidoUsuario;
+            this.correo = correo;
+            this.usuario = usuario;
+            this.clave = clave;
+            this.tipo = tipo;
+            this.estado = estado;
+            this.pregunta = pregunta;
+            this.respuesta = respuesta;
+        }
 
-    public String getNombreU() {
-        return nombreU;
-    }
-
-    public void setNombreU(String nombre) {
-        this.nombreU = nombre;
-    }
-
-    public String getClave() {
-        return clave;
-    }
-
-    public void setClave(String clave) {
-        this.clave = clave;
-    }
 }
