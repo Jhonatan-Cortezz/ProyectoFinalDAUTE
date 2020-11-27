@@ -27,7 +27,6 @@
                 android:id="@+id/imageView"
                 android:layout_width="120dp"
                 android:layout_height="145dp"
-                android:src="@drawable/image_edit_outline"
                 android:padding="4dp" />
 
             <TextView

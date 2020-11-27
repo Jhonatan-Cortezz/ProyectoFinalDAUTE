@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+tools:context=".ui.dashboard.About">
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="3dp"
+            card_view:cardCornerRadius="5dp"
+            android:layout_margin="0dp"
+            card_view:cardBackgroundColor="#F8E389"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dp">
+
+                <ImageView
+                    android:id="@+id/imageViewA"
+                    android:layout_width="120dp"
+                    android:layout_height="145dp"
+                    android:src="@drawable/ish"
+                    android:padding="4dp" />
+
+                <TextView
+                    android:id="@+id/textViewCodigoProducto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/imageViewA"
+                    android:text="Jhonatan Alexander Cortez Amaya"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/textViewCodigo1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewCodigoProducto"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@id/imageViewA"
+                    android:text=""
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:id="@+id/textViewDescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewCodigo1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@id/imageViewA"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="15dp"
+                    android:text="SIS21B"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"/>
+
+                <TextView
+                    android:id="@+id/textViewDescripcion1l"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewDescripcion"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@id/imageViewA"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewPrecio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewDescripcion1l"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/imageViewA"
+                    android:text="Scrum Master"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPrecio1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewPrecio"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@id/imageViewA"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/textViewCategoria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewPrecio1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/imageViewA"
+                    android:text="Carnet: 186419"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+                <TextView
+                    android:id="@+id/textViewCat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewCategoria"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@id/imageViewA"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="3dp"
+            card_view:cardCornerRadius="5dp"
+            android:layout_margin="0dp"
+            card_view:cardBackgroundColor="#F8E389"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dp">
+
+                <ImageView
+                    android:id="@+id/imageViewA1"
+                    android:layout_width="120dp"
+                    android:layout_height="145dp"
+                    android:src="@drawable/ls_l"
+                    android:padding="4dp" />
+
+                <TextView
+                    android:id="@+id/textViewCodigoProducto1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/imageViewA1"
+                    android:text="Nelson Willy Ticas Henriquez"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/textViewCodigo11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewCodigoProducto1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@id/imageViewA1"
+                    android:text=""
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:id="@+id/textViewDescripcion1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewCodigo11"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@id/imageViewA1"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="15dp"
+                    android:text="SIS21B"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"/>
+
+                <TextView
+                    android:id="@+id/textViewDescripcion11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewDescripcion1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@id/imageViewA1"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewPrecio1l"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewDescripcion11"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/imageViewA1"
+                    android:text="Back end"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPrecio11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewPrecio1l"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@id/imageViewA1"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/textViewCategoria1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewPrecio11"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/imageViewA1"
+                    android:text="Carnet: 187419"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+                <TextView
+                    android:id="@+id/textViewCat1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewCategoria1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@id/imageViewA1"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="3dp"
+            card_view:cardCornerRadius="5dp"
+            android:layout_margin="0dp"
+            card_view:cardBackgroundColor="#F8E389"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dp">
+
+                <ImageView
+                    android:id="@+id/imageViewA2"
+                    android:layout_width="120dp"
+                    android:layout_height="145dp"
+                    android:src="@drawable/ls_n"
+                    android:padding="4dp" />
+
+                <TextView
+                    android:id="@+id/textViewCodigoProducto2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/imageViewA2"
+                    android:text="Juan Carlos Arevalo Rivas"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/textViewCodigo12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewCodigoProducto2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@id/imageViewA2"
+                    android:text=""
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:id="@+id/textViewDescripcion2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewCodigo12"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@id/imageViewA2"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="15dp"
+                    android:text="SIS21B"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"/>
+
+                <TextView
+                    android:id="@+id/textViewDescripcion12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewDescripcion2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@id/imageViewA2"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewPrecio2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewDescripcion12"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/imageViewA2"
+                    android:text="Front end"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPrecio22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewPrecio2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@id/imageViewA2"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/textViewCategoria2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewPrecio22"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/imageViewA2"
+                    android:text="Carnet: 188119"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewCategoria2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@id/imageViewA2"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="3dp"
+            card_view:cardCornerRadius="5dp"
+            android:layout_margin="0dp"
+            card_view:cardBackgroundColor="#F8E389"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dp">
+
+                <ImageView
+                    android:id="@+id/imageViewA3"
+                    android:layout_width="120dp"
+                    android:layout_height="145dp"
+                    android:src="@drawable/ls_f"
+                    android:padding="4dp" />
+
+                <TextView
+                    android:id="@+id/textViewCodigoProducto3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/imageViewA3"
+                    android:text="Luis Ernesto Merino Leonor"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/textViewCodigo13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewCodigoProducto3"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@id/imageViewA3"
+                    android:text=""
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:id="@+id/textViewDescripcion3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewCodigo13"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@id/imageViewA3"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="15dp"
+                    android:text="SIS21B"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"/>
+
+                <TextView
+                    android:id="@+id/textViewDescripcion13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewDescripcion3"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@id/imageViewA3"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewPrecio3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewDescripcion13"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/imageViewA3"
+                    android:text="Analista"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPrecio23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewPrecio3"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@id/imageViewA3"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/textViewCategoria3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewPrecio23"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/imageViewA3"
+                    android:text="Carnet: 186219"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewCategoria3"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@id/imageViewA3"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="3dp"
+            card_view:cardCornerRadius="5dp"
+            android:layout_margin="0dp"
+            card_view:cardBackgroundColor="#F8E389"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dp">
+
+                <ImageView
+                    android:id="@+id/imageViewA4"
+                    android:layout_width="120dp"
+                    android:layout_height="145dp"
+                    android:src="@drawable/ls_p"
+                    android:padding="4dp" />
+
+                <TextView
+                    android:id="@+id/textViewCodigoProducto4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/imageViewA4"
+                    android:text="Cristian Arnoldo Martinez Martinez"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/textViewCodigo14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewCodigoProducto4"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@id/imageViewA4"
+                    android:text=""
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:id="@+id/textViewDescripcion4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewCodigo14"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@id/imageViewA4"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="15dp"
+                    android:text="SIS21B"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"/>
+
+                <TextView
+                    android:id="@+id/textViewDescripcion14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewDescripcion4"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@id/imageViewA4"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewPrecio4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewDescripcion14"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/imageViewA4"
+                    android:text="Front end"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPrecio24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewPrecio4"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@id/imageViewA4"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/textViewCategoria4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewPrecio24"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/imageViewA4"
+                    android:text="Carnet: 187619"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewCategoria4"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@id/imageViewA4"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

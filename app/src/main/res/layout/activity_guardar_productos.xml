@@ -1,9 +1,235 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.notifications.GuardarProductos">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ui.notifications.GuardarProductos">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<!-- TODO: Update blank fragment layout -->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/tiId"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtId"
+                android:layout_marginTop="0dp"
+                android:drawablePadding="10dp"
+                android:paddingLeft="1dp"
+                android:drawableStart="@drawable/id_pass"
+                android:drawableTint="@android:color/holo_blue_dark"
+                android:ems="10"
+                android:hint="Id producto"
+                android:inputType="number"
+                android:textColor="@color/textColor"
+                android:textSize="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tiNombrePro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColorHint="@android:color/darker_gray">
+
+            <EditText
+                android:id="@+id/edtNombreProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:drawablePadding="10dp"
+                android:drawableTint="@android:color/holo_blue_dark"
+                android:drawableStart="@drawable/txt_name"
+                android:paddingLeft="1dp"
+                android:ems="10"
+                android:hint="Nombre del produto"
+                android:inputType="text"
+                android:textColor="@color/textColor"
+                android:textSize="14dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tiDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColorHint="@android:color/darker_gray"
+            >
+
+            <EditText
+                android:id="@+id/edtDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTint="@android:color/holo_blue_dark"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_descrip"
+                android:paddingLeft="1dp"
+                android:textSize="14dp"
+                android:textColor="@color/textColor"
+                android:hint="Descripcion del producto"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tiStock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColorHint="@android:color/darker_gray">
+
+            <EditText
+                android:id="@+id/edtStock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:drawablePadding="10dp"
+                android:paddingLeft="1dp"
+                android:ems="10"
+                android:drawableTint="@android:color/holo_blue_dark"
+                android:drawableStart="@drawable/ic_stck"
+                android:hint="Stock"
+                android:textSize="14dp"
+                android:inputType="numberDecimal"
+                android:textColor="@color/textColor"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tiPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColorHint="@android:color/darker_gray">
+
+            <EditText
+                android:id="@+id/edtPrecio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:drawablePadding="10dp"
+                android:drawableTint="@android:color/holo_blue_dark"
+                android:paddingLeft="1dp"
+                android:ems="10"
+                android:drawableStart="@drawable/ic_pisto"
+                android:hint="Precio"
+                android:inputType="numberDecimal"
+                android:textColor="@color/textColor"
+                android:textSize="14dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tiUnidadDeMedida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColorHint="@android:color/darker_gray">
+
+            <EditText
+                android:id="@+id/edtUnidadDeMedidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:drawablePadding="10dp"
+                android:paddingLeft="1dp"
+                android:ems="10"
+                android:drawableStart="@drawable/ic_unidad"
+                android:drawableTint="@android:color/holo_blue_dark"
+                android:hint="Unidad de medida"
+                android:inputType="text"
+                android:textColor="@color/textColor"
+                android:textSize="14dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/spEstadoProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColorHint="@android:color/holo_blue_dark"
+            android:spinnerMode="dropdown"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"/>
+
+        <Spinner
+            android:id="@+id/spFkCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColorHint="@android:color/holo_blue_dark"
+            android:spinnerMode="dropdown"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"
+            />
+
+        <TextView
+            android:id="@+id/tvFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:text="yyyy-MM-dd HH:mm:ss"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnSaveProd"
+                android:layout_weight="1"
+                android:text="Guardar"
+                android:textColor="@android:color/white"
+                android:layout_width="0dp"
+                android:background="@android:color/holo_blue_dark"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+</ScrollView>
+
+</FrameLayout>
